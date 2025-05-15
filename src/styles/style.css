@@ -1,5 +1,43 @@
 * {
-  margin: 0; /*espaçamentos externos */
-  padding:0; /* Espaçamentos Internos */
+  margin: 0px; /*espaçamentos externos */
+  padding: 0px; /* Espaçamentos Internos */
   box-sizing: border-box; /* Tamanho da caixa*/
 }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    justify-items: center;
+  }
+
+  div{
+    background-color: rgba(137, 11, 240, 0.945);
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+  }
+  h1{
+
+  }
+
+  button{
+    border-radius: 05px;
+  }
+
+  .adicionar{
+    background-color: rgb(255, 255, 255)
+  }
+
+  input{
+    border-radius: 05px;
+    border: 2px solid;
+    background-color: aqua;
+    padding: 05px;
+
+    
+  }
+  button:hover{
+    background-color: rgb(16, 211, 195);
+  }
