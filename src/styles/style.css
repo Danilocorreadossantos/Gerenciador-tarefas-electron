@@ -40,7 +40,6 @@ input {
   background-color: aqua;
   padding: 05px;
 
-
 }
 
 button:hover {
@@ -57,4 +56,9 @@ li {
   margin-bottom: 05px;
   display: flex;
   justify-content: space-between;
+}
+
+.tarefa-concluida{
+  color: rgb(140, 130, 197);
+  text-decoration: line-through;
 }
