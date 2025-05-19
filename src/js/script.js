@@ -1,3 +1,15 @@
+var meuInput = document.getElementById("input-tarefa");
+
+
+// Adicionar um evento de keypress no input
+meuInput.addEventListener("keypress", function(event) {
+
+  // Verificar se a tecla pressionada foi o Enter
+  if(event.key == "Enter") {
+    // Vou chamar a função addTask
+    addTask()
+  }
+})
 function addTask() {
     //pega o imput
     var input = document.getElementById("input-tarefa")
@@ -28,5 +40,23 @@ function addTask() {
     //adicionar o LI na lista de tarefas
     list.appendChild(li)
 
+    showModal()
 
+    console.log(inputValue)
 }
+  function showModal() {
+    //pega o modal
+    var modal = document.getElementById("modal-sucesso")
+
+    //adicionar audio
+    var audio = document.getElementById("audio-teste");
+    audio.play();
+
+    // adiciona o css da modal
+    modal.classList.add('open-modal');
+
+    setTimeout(function() {
+      // remove o css da modal
+      modal.classList.remove('open-modal');
+    }, 3000);
+  }
